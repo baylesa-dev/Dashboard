@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Documentation</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="All your information at a glance !">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta name="twitter:title" content="Dashboard" />
+    <meta name="twitter:description" content="All your information at a glance !" />
+    <!-- Remind to add image below -->
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="shortcut icon" href="assets/dashboard-alt-icon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+    <div id="app"></div>
+    <script>
+        window.$docsify = {
+            name: '<img src="assets/dashboard-icon.png" alt="Dashboard Logo" class="sidebar-logo">',
+            loadSidebar: true,
+            coverpage: true,
+            auto2top: true,
+            onlyCover: true,
+            auto2top: true,
+            autoHeader: false,
+            subMaxLevel: 3,
+            maxLevel: 4,
+            repo: 'https://github.com/baylesa-dev/Dashboard',
+            alias: {
+                '/.*/_sidebar.md': '/_sidebar.md',
+            },
+            homepage: 'https://raw.githubusercontent.com/baylesa-dev/Dashboard/master/README.md',
+            search: {
+                paths: 'auto',
+                placeholder: 'Search',
+                noData: 'No Results.'
+            },
+            ga: 'UA-120716183-1'
+        };
+    </script>
+    <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+    <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+    <script src="//unpkg.com/docsify/lib/plugins/external-script.min.js"></script>
+    <script src="//unpkg.com/docsify-copy-code@2"></script>
+    <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+    <script src="//unpkg.com/docsify/lib/plugins/ga.min.js"></script>
+</body>
+
+</html>

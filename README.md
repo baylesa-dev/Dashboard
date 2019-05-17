@@ -22,8 +22,21 @@ We had to implement a web application that works similar to [Netvibes](https://w
 
 We had to assume the role of a software architect, understand and select a wide range of existing softwares and modules libraries.
 
-We decided to work with a Javascript Framework : [react.js](https://reactjs.org/) and [Create React App](https://facebook.github.io/create-react-app/) boilerplate.
+We decided to work with a Javascript Framework : [_node.js_](https://nodejs.org/en/), [_react.js_](https://reactjs.org/) and [_Create React App_](https://facebook.github.io/create-react-app/) boilerplate.
+
 
 ## Usage
 
+To homogenize the construction of the project, we used [_Docker Compose_](https://docs.docker.com/compose/).
+
+So to build and run, only launch the following command :
+
+```bash
+docker-compose build && docker-compose run
+```
+
+> This project dependencies are managed by [_npm_](https://www.npmjs.com/).
+
 ## Documentation
+
+For more details please, read the [__Documentation__]()

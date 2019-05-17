@@ -1,0 +1,31 @@
+{
+    "name": "dashboard",
+    "version": "1.0.0",
+    "description": "All your information at a glance !",
+    "main": "index.js",
+    "scripts": {
+        "docs:server": "docsify serve ./docs",
+        "docs:publish": "gh-pages --dist docs --dotfiles --message 'chore: Publish docs'"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/baylesa-dev/Dashboard.git"
+    },
+    "keywords": [
+        "nodejs",
+        "reactjs",
+        "cra",
+        "docsify",
+        "gh-pages"
+    ],
+    "author": "baylesa-dev",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/baylesa-dev/Dashboard/issues"
+    },
+    "homepage": "https://github.com/baylesa-dev/Dashboard#readme",
+    "dependencies": {
+        "docsify-cli": "^4.3.0",
+        "gh-pages": "^2.0.1"
+    }
+}
