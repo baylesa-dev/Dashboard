@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://raw.githubusercontent.com/baylesa-dev/Dashboard/master/assets/dashboard-icon.png" height=400>
+    <img src="https://raw.githubusercontent.com/baylesa-dev/Dashboard/master/docs/assets/dashboard-icon.png" height=400>
     <h1 align="center">Dashboard</h1>
     <h3 align="center">All your information at a glance</h3>
 </p>
