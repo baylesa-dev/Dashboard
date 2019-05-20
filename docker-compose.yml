@@ -1,0 +1,29 @@
+version: 3
+services:
+
+  mongodb:
+    image: "mongo"
+    ports: "27017:27017"
+
+  server:
+    build:
+      context: ./server
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./server:/usr/src/Dashboard/server
+      - /usr/src/Dashboard/server/node_modules
+    links:
+      - mongodb
+    depends_on:
+      - mongodb
+
+  client:
+    build: ./client
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./client:/usr/src/Dashboard/client
+      - /usr/src/Dashboard/client/node_modules
+    depends_on:
+      - server
