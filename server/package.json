@@ -2,16 +2,13 @@
     "name": "dashboard-server",
     "version": "1.0.0",
     "description": "Dashboard backend",
-    "main": "index.js",
+    "main": "src/index.js",
     "scripts": {
-        "start": "npm run start:dev",
-        "start:dev": "nodemon",
-        "start:prod": "node ./src/index.js",
+        "start": "npm run start:prod",
+        "start:dev": "nodemon --exec babel-node src/index.js | pino-pretty ",
+        "start:prod": "node ./dist/index.js",
         "clean": "rm -rf ./dist",
-        "build": "npm run clean"
-    },
-    "devDependencies": {
-        "nodemon": "^1.19.0"
+        "build": "npm run clean && babel src --out-dir dist"
     },
     "repository": {
         "type": "git",
@@ -24,20 +21,22 @@
     },
     "homepage": "https://github.com/baylesa-dev/Dashboard#readme",
     "dependencies": {
-        "body-parser": "^1.19.0",
-        "cors": "^2.8.5",
-        "express": "^4.17.0",
-        "express-session": "^1.16.1",
-        "fs": "0.0.1-security",
-        "http": "0.0.0",
-        "https": "^1.0.0",
-        "mongoose": "^5.5.10",
-        "passport": "^0.4.0",
-        "passport-facebook": "^3.0.0",
-        "passport-github": "^1.1.0",
-        "passport-google-oauth": "^2.0.0",
-        "passport-twitter": "^1.0.4",
+        "@hapi/boom": "^7.4.2",
+        "argon2": "^0.23.0",
+        "fastify": "^2.5.0",
+        "fastify-blipp": "^2.0.0",
+        "fastify-cookie": "^3.0.2",
+        "fastify-session": "^3.0.0",
+        "mongoose": "^5.6.0",
         "path": "^0.12.7",
         "socket.io": "^2.2.0"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.4.4",
+        "@babel/core": "^7.4.5",
+        "@babel/node": "^7.4.5",
+        "@babel/preset-env": "^7.4.5",
+        "nodemon": "^1.19.0",
+        "pino-pretty": "^3.1.0"
     }
 }
