@@ -12,4 +12,4 @@ COPY . /usr/src/Dashboard/server
 
 EXPOSE 8080
 
-CMD [ "npm", "start:prod" ]
+CMD [ "npm", "start" ]
