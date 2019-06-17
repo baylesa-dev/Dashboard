@@ -1,3 +1,7 @@
+### Projects Related ###
+
+server/certs/
+
 ### Code ###
 .vscode/*
 !.vscode/settings.json
