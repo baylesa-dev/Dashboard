@@ -35,8 +35,10 @@ So to build and run, only launch the following command :
 docker-compose build && docker-compose run
 ```
 
-> This project dependencies are managed by [_npm_](https://www.npmjs.com/).
+> ⚠️ The API is build on a __HTTPS__ server. You have to generate certificats. Please refer to the [__Documentation__](https://baylesa-dev.github.io/Dashboard/)
+
+> This project dependencies are managed by [_yarn_](https://yarnpkg.com/en/).
 
 ## Documentation
 
-For more details please, read the [__Documentation__]()
+For more details please, read the [__Documentation__](https://baylesa-dev.github.io/Dashboard/)
